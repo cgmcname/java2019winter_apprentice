@@ -5,6 +5,8 @@ public class EmployeeMain {
 
 	public static void main(String[] args) {
 		
+		//test for git 
+		
 		Employee emp1 = new Employee(1,"1","David", 'B', "Banner", "1/1/1960", 100000.00);
 		
 		Employee emp2 = new Employee(2,"2","Thor", "Odinson", "1/1/1660", 10.00);
