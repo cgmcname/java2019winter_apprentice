@@ -12,8 +12,7 @@ public class GUI {
 	// Table
 	JTable table;
 
-	private boolean alpha;
-	private boolean omega;
+	
 
 	// Constructor
 	GUI(boolean alpha, boolean omega) {
