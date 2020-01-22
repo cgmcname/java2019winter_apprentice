@@ -117,13 +117,13 @@ public class GUI {
 		// table.setShowVerticalLines(true);
 		// table.setShowHorizontalLines(true);
 		table.setGridColor(Color.black);
-		// table.setBounds(30, 40, 200, 300);
+		//table.setBounds(30, 40, 200, 300);
 
 		// adding it to JScrollPane
 		JScrollPane pane = new JScrollPane(table);
 		frame.add(pane);
 		// Frame Size
-		frame.setSize(500, 200);
+		frame.setSize(1000, 110);
 		// Frame Visible = true
 		frame.setVisible(true);
 
