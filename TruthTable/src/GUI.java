@@ -16,15 +16,11 @@ public class GUI {
 
 	// Constructor
 	GUI(boolean alpha, boolean omega) {
-		// Frame initiallization
+		
 
 		Calculations cal = new Calculations();
 
-		/*
-		 * String andF = cal.findAnd(alpha, omega); String orF = cal.findOr(alpha,
-		 * omega); String andSCF = cal.findAndShortCut(alpha, omega); String orSCF =
-		 * cal.findOrShortCut(alpha, omega); String xorF = cal.findXor(alpha, omega);
-		 */
+		
 
 		frame = new JFrame();
 
