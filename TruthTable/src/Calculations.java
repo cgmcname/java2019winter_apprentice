@@ -79,6 +79,6 @@ public class Calculations {
 
 		return letter;
 
-	}
+	} 
 
 }
