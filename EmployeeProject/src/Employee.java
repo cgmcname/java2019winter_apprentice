@@ -14,7 +14,7 @@ public class Employee extends Object {
 	Employee() {
 
 		id = 4;
-		idNumber = "4hekjewer";
+		idNumber = "4hekjer";
 
 		firstName = "Bob";
 		middleIntial = 'G';
@@ -40,27 +40,13 @@ public class Employee extends Object {
 
 	Employee(int id, String idNumber, String firstName, String lastName, String dateOfBirth, double salary) {
 
-		setId(id);
-		setIdNumber(idNumber);
-		setFirstName(firstName);
-		setMiddleIntial(' ');
-		setLastName(lastName);
-		setDateOfBirth(dateOfBirth);
-		setSalary(salary);
-		
-		
+		this(id, idNumber, firstName, ' ', lastName, dateOfBirth, salary);
 
 	}
-	
+
 	Employee(int id, String idNumber, String firstName, char middleIntial, String lastName, String dateOfBirth) {
 
-		setId(id);
-		setIdNumber(idNumber);
-		setFirstName(firstName);
-		setMiddleIntial(middleIntial);
-		setLastName(lastName);
-		setDateOfBirth(dateOfBirth);
-		setSalary(0.0);
+		this(id, idNumber, firstName, middleIntial, lastName, dateOfBirth, 0.0);
 
 	}
 
@@ -119,7 +105,7 @@ public class Employee extends Object {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
+
 	@Override
 	public String toString() {
 		String temp = "";
@@ -130,9 +116,8 @@ public class Employee extends Object {
 		temp += "\nlastName : " + lastName;
 		temp += "\ndateOfBirth : " + dateOfBirth;
 		temp += "\nsalary : " + salary;
-		
+
 		return temp;
 	}
-	
 
 }
