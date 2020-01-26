@@ -7,7 +7,9 @@ public class EnumTest {
 		
 		System.out.println(test);
 		
-		System.out.println("Shipping Type: " + " " + test.ordinal());
+		System.out.println("Shipping Type:" + " " + test.ordinal());
+		
+		
 
 
 	}

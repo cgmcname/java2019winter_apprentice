@@ -9,7 +9,7 @@ public class EmployeeMain {
 
 		Employee emp3 = new Employee(3, "3", "John", 'J', "Doe", "1/1/1340");
 		
-		EmployeeAssignedToRegion guy = new EmployeeAssignedToRegion();
+		EmployeeAssignedToRegion guy = new EmployeeAssignedToRegion(1, "1", "David", 'B', "Banner", "1/1/1960", 100000.00, 2);
 
 		//System.out.println(emp1);
 
