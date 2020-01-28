@@ -33,7 +33,7 @@ public class EmployeeAssignedToRegion extends Employee {
 		
 		this(id, idNumber, firstName, ' ', lastName, dateOfBirth, salary, region);
 		
-		//reg = Region.values()[region];
+		
 
 	}
 
