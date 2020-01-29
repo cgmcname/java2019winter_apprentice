@@ -34,8 +34,16 @@ public class SpeakAndSay {
 		
 		for(int i = 0; i < animals.size(); i++) {
 			
-			System.out.printf("The animal goes %s!\n", animals.get(i).makeSound());
+			System.out.printf("The %s goes %s!\n",animals.get(i).getClass().getName(), animals.get(i).makeSound());
 		}
+		
+		System.out.println();
+		System.out.println();
+		
+		
+	    for ( Animal a : animals ) {
+	    	System.out.printf("The %s goes %s!\n",a.getClass().getName(), a.makeSound());
+	    }
 		
 		//animals.get(1).makeSound();
 		
