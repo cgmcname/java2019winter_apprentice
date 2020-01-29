@@ -2,8 +2,9 @@
 public class Wolf extends Mammal {
 	
 	@Override
-	public void makeSound() {
-		System.out.println("Howl");
+	public String makeSound() {
+		
+		return "Howl";
 	}
 
 }

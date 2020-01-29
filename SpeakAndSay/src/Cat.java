@@ -2,8 +2,9 @@
 public class Cat extends Mammal {
 	
 	@Override
-	public void makeSound() {
-		System.out.println("Meow");
+	public String makeSound() {
+		
+		return "Meow";
 	}
 
 }

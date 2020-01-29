@@ -2,8 +2,9 @@
 public class Chicken extends Bird {
 	
 	@Override
-	public void makeSound() {
-		System.out.println("Boc Boc");
+	public String makeSound() {
+		
+		return "Boc Boc";
 	}
 
 }
