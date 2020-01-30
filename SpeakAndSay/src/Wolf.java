@@ -6,5 +6,10 @@ public class Wolf extends Mammal {
 		
 		return "Howl";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 
 }

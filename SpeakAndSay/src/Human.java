@@ -6,4 +6,9 @@ public class Human extends Mammal {
 		
 		return "Hey There";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 }

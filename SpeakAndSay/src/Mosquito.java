@@ -6,5 +6,10 @@ public class Mosquito extends Insect {
 		
 		return "Irritation";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 
 }

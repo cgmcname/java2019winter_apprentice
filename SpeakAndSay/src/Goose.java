@@ -6,5 +6,10 @@ public class Goose extends Bird {
 		
 		return "Honk";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 
 }

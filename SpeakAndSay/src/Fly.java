@@ -6,5 +6,10 @@ public class Fly extends Insect {
 		
 		return "Bzzzz";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 
 }

@@ -1,15 +1,12 @@
 
-public class Frog extends Amphian {
-	
-	@Override
+public abstract class Electronic implements MakeSoundable {
+
 	public String makeSound() {
-		
-		return "ribbit";
+		return "";
 	}
-	
+
 	public String accessClassName() {
 
 		return this.getClass().getName();
 	}
-
 }

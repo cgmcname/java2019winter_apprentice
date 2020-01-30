@@ -1,8 +1,13 @@
 
-public abstract class Animal {
+public abstract class Animal implements MakeSoundable {
 	
-	abstract String makeSound(); 
+	public String makeSound() {
+		return "";
+	}
 		
-	
+	public String accessClassName() {
+		
+		return this.getClass().getName();
+	}
 
 }

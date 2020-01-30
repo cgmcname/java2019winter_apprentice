@@ -42,9 +42,49 @@ public class SpeakAndSay {
 
 		for (Animal a : animals) {
 			System.out.printf("The %s goes %s!\n", a.getClass().getName(), a.makeSound());
+
 		}
 
-		// animals.get(1).makeSound();
+		System.out.println();
+		System.out.println();
+
+		ArrayList<MakeSoundable> petSounds = new ArrayList<MakeSoundable>();
+
+		Dog fido2 = new Dog();
+
+		petSounds.add(fido2);
+
+		petSounds.add(new Chicken());
+
+		petSounds.add(new Human());
+
+		petSounds.add(new Duck());
+
+		petSounds.add(new Cat());
+
+		petSounds.add(new Fly());
+
+		petSounds.add(new Frog());
+
+		petSounds.add(new Snake());
+
+		petSounds.add(new Mosquito());
+
+		petSounds.add(new Wolf());
+
+		petSounds.add(new Goose());
+
+		petSounds.add(new Bovine());
+
+		petSounds.add(new Toaster());
+
+		petSounds.add(new Computer());
+
+		petSounds.add(new SmartRefrigerator());
+
+		for (MakeSoundable b : petSounds) {
+			System.out.printf("The %s goes %s!\n", b.accessClassName(), b.makeSound());
+		}
 
 	}
 

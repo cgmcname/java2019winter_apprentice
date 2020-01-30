@@ -6,5 +6,10 @@ public class Snake extends Reptile {
 		
 		return "SSSSSsssss";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 
 }

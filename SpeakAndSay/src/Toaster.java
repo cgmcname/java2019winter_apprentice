@@ -1,10 +1,10 @@
 
-public class Frog extends Amphian {
-	
+public class Toaster extends Electronic {
+
 	@Override
 	public String makeSound() {
-		
-		return "ribbit";
+		// TODO Auto-generated method stub
+		return "Death to Humans";
 	}
 	
 	public String accessClassName() {

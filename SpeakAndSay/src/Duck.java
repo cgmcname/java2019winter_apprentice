@@ -6,5 +6,10 @@ public class Duck extends Bird {
 		
 		return "Quack";
 	}
+	
+	public String accessClassName() {
+
+		return this.getClass().getName();
+	}
 
 }
