@@ -2,7 +2,12 @@
 public class Calculations {
 
 	
-
+	/**
+	 * The Method modifyBool changes a boolean value true/false into a string value T/F
+	 * @author Christopher McNames
+	 * @param x Is the truth value for a given expression
+	 * @return String value mod (T/F)
+	 */
 	public String modifyBool(boolean x) {
 
 		char letter;
