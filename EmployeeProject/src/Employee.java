@@ -1,3 +1,9 @@
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 
 public class Employee extends Object {
 
@@ -96,6 +102,32 @@ public class Employee extends Object {
 
 	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
+	}
+	
+	public Date getJava8DateOfBirth() {
+		
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("MM/dd/yyyy", Locale.ENGLISH);
+		
+		LocalDate dob = LocalDate.parse( dateOfBirth, format);
+		
+		Date returnDate = Date.from(dob.atStartOfDay(ZoneId.systemDefault()).toInstant());
+		
+		return returnDate;
+		
+	}
+	
+	public int calculateAge() {
+		
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("MM/dd/yyyy", Locale.ENGLISH);
+		
+		LocalDate dob = LocalDate.parse( dateOfBirth, format);
+		
+		LocalDate now =  LocalDate.now();
+		
+		int yearsOld = Period.between(dob, now).getYears();
+		
+		return yearsOld;
+		
 	}
 
 	public double getSalary() {
